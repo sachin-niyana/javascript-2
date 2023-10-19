@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let a = [1, 2, 3, 4, 5, 6];
+      let a2 = a.reduce((h1, h2) => {
+        return h1 + h2;
+      });
+      console.log(a2);
+    </script>
+
+    <script>
+      let value = [1, 2, 3, 4, 5, 6];
+      let arr = value.reverse();
+      console.log(arr);
+    </script>
+
+    <script>
+      function odd(number) {
+        if (number % 2 == 0) {
+          return "even";
+        } else {
+          return "odd";
+        }
+      }
+      console.log(odd(2));
+    </script>
+    <script>
+      function data(n) {
+        value1 = n[0];
+        value2 = n[1];
+        let first = n[0] * n[1];
+        for (let i = 1; i < n.length - 1; i++) {
+          let sum = n[i] * n[i + 1];
+          if (first < sum) {
+            first = sum;
+            value1 = n[i];
+            value2 = n[i + 1];
+          }
+        }
+        console.log(value1, value2, first);
+      }
+
+      data([3, 4, 5, 6, -7, -10, 2]);
+    </script>
+    <script>
+      function out(n) {
+        let out = n * n * n;
+        console.log(out);
+      }
+      out([3]);
+    </script>
+    <script>
+      function abc(start, end) {
+        for (let i = 0; i <= end; i++) {
+          const r = i * i * i;
+          console.log(i + "*" + i + "*" + i + "=" + r);
+        }
+      }
+      abc(3, 6);
+    </script>
+    <script>
+      function abc(x, y) {
+        r = 1;
+        for (let i = 0; i <= y; i++) {
+          let value = r * x;
+          value = r;
+          console.log(r);
+        }
+      }
+      abc(2, 10);
+    </script>
+  </body>
+</html>
